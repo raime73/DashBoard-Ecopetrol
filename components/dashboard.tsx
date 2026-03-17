@@ -87,7 +87,7 @@ function ChartTooltip({
   label
 }: {
   active?: boolean;
-  payload?: Array<{ value?: number; name?: string; payload?: any }>;
+  payload?: Array<{ value?: number; name?: string; payload?: unknown }>;
   label?: string;
 }) {
   if (!active || !payload?.length) return null;
